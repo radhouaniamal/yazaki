@@ -1,55 +1,60 @@
 <main>
    <div class="container">
       <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
-         <div class="container">
+         <div class="container-fluid" style="background:">
             <div class="row justify-content-center">
                <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
                   <div class="d-flex justify-content-center py-4"> <a routerLink="/"
-                        class="logo d-flex align-items-center w-auto"> <img src="assets/img/logo.png" alt=""> <span
-                           class="d-none d-lg-block">Admin</span> </a></div>
-                  <div class="card mb-3">
+                        class="logo d-flex align-items-center w-auto"> <img src="assets/img/image002.gif" alt=""> <span
+                         class="d-none d-lg-block">Bienvenue chère employé dans notre plateforme</span> </a></div>
+                     <div class="card mb-3">
                      <div class="card-body">
-                        <div class="pt-4 pb-2">
-                           <h5 class="card-title text-center pb-0 fs-4">Créez votre compte !</h5>
-                           <p class="text-center small">Cela ne prend que quelques instants. </p>
-                        </div>
-                        <form class="row g-3 needs-validation" novalidate (submit)="signup()" NgModel>
-                           <div class="col-12">
-                              <label for="yourFirstName" class="form-label">Nom</label> <input type="text"
-                                 name="firstname" class="form-control" id="yourFirstName" [(ngModel)]="firstname"
-                                 required>
-                              <div class="invalid-feedback">Entrez votre nom.</div>
-                           </div>
-                           <div class="col-12">
-                              <label for="yourLastName" class="form-label">Prénom</label> <input type="text"
-                                 name="lastname" class="form-control" id="yourLastName" [(ngModel)]="lastname" required>
-                              <div class="invalid-feedback">Entrez votre prénom.</div>
-                           </div>
-                           <div class="col-12">
-                              <label for="yourUsername" class="form-label">Adresse electronique</label>
-                              <div class="input-group has-validation">
-                                 <span class="input-group-text" id="inputGroupPrepend">@</span> <input type="email"
-                                    name="username" class="form-control" id="yourUsername" [(ngModel)]="email" required>
-                                 <div class="invalid-feedback">Entrez votre adresse.</div>
-                              </div>
-                           </div>
-                           <div class="col-12">
-                              <label for="yourPassword" class="form-label">Mot de passe</label> <input type="password"
-                                 name="password" class="form-control" id="yourPassword" [(ngModel)]="password" required>
-                              <div class="invalid-feedback">Entrez votre mot de passe.</div>
-                           </div>
-                           <div class="col-12"> <button class="btn btn-primary w-100" type="submit">S'inscrire</button>
-                           </div>
-                           <div class="col-12">
-                              <p class="small mb-0">Vous avez dèjà un compte? <a routerLink="/login">Se connecter</a>
-                              </p>
-                           </div>
-                        </form>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-   </div>
-</main>
+                     <form class="row g-3">
+  <form class="row g-3">
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Nom</label>
+    <input type="email" class="form-control" id="inputEmail4">
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Prenom</label>
+    <input type="password" class="form-control" id="inputPassword4">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress" class="form-label">Matricule</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div> 
+  <select class="form-select" aria-label="Default select example">
+  <option selected>Open this select menu</option>
+  <option value="1">P3</option>
+  <option value="2">P1</option>
+  <option value="3">TD</option>
+  <option value="3">RH</option>
+  <option value="3">Logistique</option>
+  <option value="3">Nys</option>
+  <option value="3">Achat</option>
+  <option value="3">Finance</option>
+  <option value="3">Qualite</option>
+  <option value="3">EHS</option>
+  
+
+
+
+
+
+
+
+ 
+   </select>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-outline-primary w-100">S'inscrire</button>
+  </div>
+</form>
+  

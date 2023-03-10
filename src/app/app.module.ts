@@ -20,7 +20,13 @@ import { HasRoleGuard } from './services/hasRole.guard';
 import { FormsModule } from '@angular/forms';
 import { AdminComponent } from './layouts/AdminLayout/admin/admin.component';
 import { UserComponent } from './layouts/AdminLayout/user/user.component';
+import { MatComponent } from './components/mat/mat.component';
+import { AmalComponent } from './component/amal/amal.component';
+import { CommandeComponent } from './componentt/commande/commande.component';
+import { ScrapesComponent } from './componentts/scrapes/scrapes.component';
 
+
+ 
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +42,17 @@ import { UserComponent } from './layouts/AdminLayout/user/user.component';
     PagesError404Component,
     PagesBlankComponent,
     AdminComponent,
-    UserComponent
+    UserComponent,
+    MatComponent,
+    AmalComponent,
+    CommandeComponent,
+    ScrapesComponent,
+
+   
+   
+    
+    
+    
   ],
   imports: [
     BrowserModule,

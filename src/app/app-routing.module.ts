@@ -9,15 +9,31 @@ import { PagesBlankComponent } from './pages/pages-blank/pages-blank.component';
 import { UsersProfileComponent } from './pages/users-profile/users-profile.component';
 import { AdminComponent } from './layouts/AdminLayout/admin/admin.component';
 import { UserComponent } from './layouts/AdminLayout/user/user.component';
+import { MatComponent } from './components/mat/mat.component';
+import { AmalComponent } from './component/amal/amal.component';
+import { CommandeComponent } from './componentt/commande/commande.component';
+import { ScrapesComponent } from './componentts/scrapes/scrapes.component';
 
 const routes: Routes = [
   {
     path: 'admin', component: AdminComponent,
     children: [
-      { path: '', component: DashboardComponent, },
+      { path:'',component:DashboardComponent,},
+      {path:'mat' , component:MatComponent},
 
+      { path: 'amal', component:AmalComponent },  
+      { path: 'commande', component:CommandeComponent},
+      { path: 'scrapes', component:ScrapesComponent}
+
+
+
+
+     
+      
     ]
   },
+
+  
 
   
 
